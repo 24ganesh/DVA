@@ -1,0 +1,584 @@
+//Font colors
+//----------------------------------------------------------
+@fontcolor: #1F86C4;
+@color: #000000;
+
+//Back Ground colors
+//----------------------------------------------------------
+@menuBGcolor: #00bbff;
+@sidebarcolor: #B4D6EC;
+
+@BGColor: linear-gradient(to right, rgba(228,245,252,1) 0%, rgb(238, 247, 253) 100%);
+@HeaderBGcolor: linear-gradient(to bottom, #0678BE, white);
+@mediaBGcolor: #022439;
+
+// Border color
+//----------------------------------------------------------
+@bordercolor: #53B0EB;
+
+// Brand colors
+// -------------------------
+
+@brand-primary:         #428bca;
+@brand-success:         #5cb85c;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+@brand-info:            #5bc0de;
+
+// Scaffolding
+// -------------------------
+
+@body-bg:               #fff;
+@text-color:            #C8C8C8;
+
+// Links
+// -------------------------
+
+@link-color:            #fff;
+@link-hover-color:      #2f2cf5;
+
+@font-sm-base:            9px;
+@font-size-base:          12px;
+@font-size-medium:        15px;
+@font-size-big:          28px;
+
+@font-weight-light:           300;
+@font-weight-regular:          400;
+@font-weight-semibold:         600;
+@font-weight-bold:             700;
+@font-weight-extrabold:        800;
+
+.primary-font-size {
+  color: @fontcolor;
+  text-decoration: none;
+  font-weight: @font-weight-regular;
+  font-size: @font-size-base;
+
+}
+.secandary-font-size {
+  background :url("/sites/default/files/diagonal.jpeg") repeat scroll right center rgba(0,0,0,0);
+  width: 100%;
+  font-weight: @font-weight-regular;
+  font-size: @font-size-big;
+}
+
+body {
+
+background: @BGColor;
+
+}
+.site-logo {
+  display: table-cell;
+  vertical-align: middle;
+
+}
+
+
+.site-logo img {
+  max-height: 100px;
+  max-width: 100%;
+  border: 0px !important;
+  background-color: transparent;
+  outline : none !important;
+  border: none;
+
+  display: inline-block;
+  height: auto;
+  padding: 1px;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.site-name, #site-slogan {
+  line-height: 1;
+  text-rendering: optimizelegibility;
+}
+
+.site-name a {
+  font-size: 32px;
+  font-weight: @font-weight-bold;
+  color: @color;
+  text-decoration: none;
+  a:hover {
+    color: @color;
+  }
+}
+
+.site-name a:focus {
+  outline: none;
+}
+
+
+#logo-sitename {
+  width: 50%;
+}
+#logo-name {
+  width: 50%;
+  display: inline-flex;
+  margin-top: -30px;
+}
+#site-slogan {
+  font-size: @font-size-medium;
+  line-height: 1.1em;
+  margin-top: 0.3em;
+}
+
+
+#name-and-slogan {
+  display: table-cell;
+  padding: 20px 0 20px 10px;
+  vertical-align: middle;
+  width: 100%;
+}
+.header-logo {
+  background: @HeaderBGcolor;
+  max-width: auto;
+  margin-left: 0px;
+}
+
+.block-menu {
+  ul {
+    li {
+      font-size: @font-size-base;
+      display: inline-block;
+      position:relative;
+    }
+  }
+}
+
+
+.container .navbar-collapse {
+  background-color: @menuBGcolor;
+  width: auto;
+  border-bottom: 2px solid @bordercolor;
+  border-top: 1px dotted @bordercolor;
+  font-weight: bold;
+  margin-right: 31px;
+  height: 35px;
+  ul {
+    li a {
+      background: url("/sites/default/files/nav-background.png") no-repeat scroll 16px 14px rgba(0, 0, 0, 0);
+      color: @color;
+      font-size: @font-size-base;
+      padding: 8px 17px 9px 24px;
+    }
+    a:hover
+    {
+      color: @link-color;
+
+    }
+    a:focus {
+      outline: none;
+    }
+
+  }
+}
+
+
+.navbar-default {
+  border-color: transparent !important;
+
+}
+
+
+
+.navbar-toggle {
+  float: left;
+  background-color: #000080;
+  a:hover {
+    background: transparent!important;
+  }
+}
+
+.navbar-default .navbar-nav {
+  .active {
+    a {
+      background-color: transparent !important;
+      color: none !important;
+    }
+
+  }
+}
+
+.collapse {
+  margin-left: 10px;
+}
+
+.navbar-collapse {
+  outline: none;
+  ul {
+    li {
+      font-size: @font-size-medium;
+      padding: 0px;
+      margin: auto;
+    }
+
+    a {
+      color: @menuBGcolor;
+    }
+
+    a:hover
+    {
+      color: @link-color;
+
+    }
+  }
+}
+.navbar {
+  border-radius: 0px;
+  background-color: @menuBGcolor;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: transparent;
+}
+
+#block-block-1 {
+  height: 100px;
+  border: 1px solid @bordercolor ;
+  background-color: #ffffff;
+  margin-top: 10px;
+}
+
+.navbar-text {
+
+  font-size: @font-size-medium;
+  width: 30%;
+  margin-top: 30px;
+
+}
+
+
+
+/*------------ Search Form ----------*/
+#block-search-form {
+  width: 25%;
+  float: right;
+  margin-top: -45px;
+  margin-right: 5px;
+}
+
+/*--top userhead-less--*/
+
+#block-menu-menu-userheads {
+  background-color: @mediaBGcolor;
+  height: 30px;
+  width: 50%;
+  float: right;
+  padding-top: 0px;
+  margin-top: -30px;
+  border-radius: 0px;
+  .nav {
+    float: right;
+
+    a {
+
+      font-weight: @font-weight-regular;
+      font-size: @font-size-base;
+      font-style:normal;
+      color: #ffffff;
+
+    }
+    .first {
+      height: 30px;
+      margin-top: 0px;
+      background-color: @mediaBGcolor! important;
+      margin-right: 10px;
+      padding: 0px;
+    }
+    .leaf {
+      background-color:darkgray;
+      height: 30px;
+      margin-left: -5px;
+      margin-right: 0px;
+    }
+    .last {
+      height: 30px;
+      background-color: red;
+      margin-left: -5px;
+    }
+
+    a:hover
+
+    {
+      background-color: transparent;
+
+    }
+    a:focus {
+      outline: none;
+      color: transparent;
+    }
+
+  }
+
+}
+
+#block-menu-menu-social-media {
+  background-color: @mediaBGcolor;
+  width: 50%;
+  float: left;
+  margin-top: -30px;
+  height: 30px;
+  .nav {
+    li a {
+      pading-top: 10px;
+
+    }
+
+    .first {
+      font-size: 0px;
+      background: url('/sites/default/files/fb-white.png') no-repeat scroll 0 0 rgba(0,0,0,0);
+      padding: 0px;
+      margin-left: 2px;
+      max-width: 100%;
+    }
+
+    .last {
+      font-size: 0px;
+      background: url('/sites/default/files/tw-white.png') no-repeat scroll 0 0 rgba(0,0,0,0);
+      padding: 0px;
+      margin-left: -10px;
+      max-width: 100%;
+
+    }
+    a:hover {
+      background-color: transparent;
+    }
+    a:focus {
+      outline: none;
+      background-color: transparent;
+    }
+  }
+}
+
+
+/*---Media Query --*/
+@media (max-width: 480px) {
+
+  body {
+    font-size: 9px;
+  }
+
+  #logo {
+
+    img {
+      max-height: 75px ;
+      max-width: none;
+      border: 0px !important;
+      background-color: transparent;
+      outline : none;
+      padding: 0px;
+    }
+
+  }
+  .site-name a {
+    font-size: 22px;
+  }
+  #site-slogan a {
+    font-size: @font-sm-base !important;
+  }
+
+
+  #block-menu-menu-social-media {
+
+    width: 30% !important;
+    border: none;
+
+    li a {
+
+      padding: 13px 14px !important;
+
+    }
+
+
+    .nav {
+      overflow:auto;
+
+      .first {
+        max-width: 100%;
+        padding-left: 1px !important;
+
+        margin-left: 5px !important;
+      }
+      .last {
+        max-width: 100%;
+        padding-right: 2px;
+      }
+    }
+  }
+  #block-menu-menu-userheads {
+    width: 60%;
+    border: none;
+    font-size:@font-sm-base;
+    li a {
+      padding: 10px 3px !important;
+      font-size: 9px !important;
+    }
+  }
+  .navbar-text {
+
+    font-size: @font-size-base;
+    margin-left: 5px;
+
+  }
+  #block-system-main {
+    #node-35 {
+      h2  {
+        font-weight: @font-weight-light;
+        font-size: @font-size-medium;
+      }
+    }
+  }
+
+  .region-sidebar-first {
+    width: 100% !important;
+  }
+  #block-views-sections-block {
+    width: 100%;
+  }
+
+  #block-views-chapters-block {
+    width: 100%;
+  }
+
+  #block-views-topics-block {
+    width: 100% !important;
+  }
+
+  #block-block-19 {
+    h4 {
+      font-weight: @font-weight-light;
+      font-size:  @font-size-medium;
+    }
+    p {
+      font-weight: @font-weight-light;
+      font-size: @font-size-medium;
+    }
+  }
+
+
+  #block-block-14 {
+    img {
+      width: 100% !important;
+    }
+
+  }
+
+  .navbar-text {
+    margin-top: 6px;
+  }
+
+  #block-search-form {
+    width: 45%;
+    height: 50%;
+  }
+
+
+  .flexslider .slides img {
+    width: 100%!important;
+    height:auto!important;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+  .site-logo img {
+    max-height: 100px;
+    max-width: none;
+    border: 0px !important;
+    background-color: transparent;
+    outline : none;
+  }
+
+  body {
+    font-size: @font-size-medium;
+  }
+
+  .site-logo {
+    display: table-cell;
+    vertical-align: middle;
+    border: 0px !important;
+    background-color: transparent;
+    outline : none;
+  }
+
+  #block-menu-menu-social-media {
+    width: 25%;
+    margin-left: 0px;
+    display: inline-block !important;
+    margin-right: none;
+    ul {
+      .first {
+        max-width: 100%;
+        font-size: 0px;
+        padding-left: 1px;
+        margin-left: 5px;
+      }
+      .last {
+        max-width: 100%;
+        font-size: 0px;
+        padding-right: 2px;
+      }
+    }
+
+  }
+  #block-menu-menu-userheads {
+    width: 80%;
+    margin-right: 0px;
+    border: none !important;
+    display: inline-block !important;
+
+    li a {
+      font-size: @font-size-base;
+      padding: 7px 15px;
+    }
+    .nav {
+      .leaf {
+        padding-right: 3px;
+      }
+    }
+  }
+  .region-sidebar-first {
+    width: 100%;
+  }
+  #block-views-sections-block {
+    width: 100%;
+  }
+
+  #block-views-chapters-block {
+    width: 100%;
+  }
+
+  #block-views-topics-block {
+    width: 100%;
+  }
+
+  #block-block-14 {
+    img {
+      width: 100% !important;
+    }
+
+  }
+
+  #block-block-2 {
+     .share p .exclusive {
+      font-size: 9px !important;
+    }
+    .divider {
+      font-size: 9px !important;
+    }
+    .share p {
+      font-size: 9px !important;
+    }
+  }
+
+}
+
+
+
